@@ -1,3 +1,7 @@
+import os
+
+score = 0
+
 print("Começar o Quiz ? (S|N) \n")
 choose = input("R: ") #choose get the input value
 choose = choose.upper()
@@ -12,6 +16,7 @@ answer_1 = answer_1.upper()
 
 if answer_1 == "A":
     print("Correto!")
+    score += 1
 else:
     print("incorreto!")
 
@@ -21,5 +26,9 @@ answer_2 = answer_2.upper()
 
 if answer_2 == "A" :
     print("Correto!")
+    score += 1
 else:
     print("incorreto!")
+
+os.system('cls')
+print(f"O quiz acabou... pontuação: {score}/2")
