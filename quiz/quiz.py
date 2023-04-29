@@ -1,7 +1,8 @@
 print("Começar o Quiz ? (S|N) \n")
 choose = input("R: ") #choose get the input value
+choose = choose.upper()
 
-if choose != "S" or choose !="s":
+if choose != "S":
     quit() #Finish the execution
 
 print("iniciando...")
