@@ -1,4 +1,4 @@
-import os
+import os #Importa a biblioteca do Sistema Operacional
 
 score = 0
 
@@ -30,5 +30,5 @@ if answer_2 == "A" :
 else:
     print("incorreto!")
 
-os.system('cls')
+os.system('cls') #Limpa o Prompt de comando
 print(f"O quiz acabou... pontuação: {score}/2")
